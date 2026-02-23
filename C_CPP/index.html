@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Scientific Calculator</title>
+</head>
+<body>
+<h2>Calculator UI</h2>
+
+<input id="num1" placeholder="Number 1">
+<input id="num2" placeholder="Number 2">
+<select id="operation">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">*</option>
+    <option value="/">/</option>
+    <option value="^">^</option>
+    <option value="s">√</option>
+    <option value="l">log</option>
+    <option value="e">exp</option>
+    <option value="sh">sinh</option>
+    <option value="ch">cosh</option>
+    <option value="th">tanh</option>
+    <option value="ish">asinh</option>
+    <option value="ich">acosh</option>
+    <option value="ith">atanh</option>
+    <option value="sin">sin</option>
+    <option value="cos">cos</option>
+    <option value="tan">tan</option>
+    <option value="is">asin</option>
+    <option value="ic">acos</option>
+    <option value="it">atan</option>
+</select>
+<button onclick="calculate()">Calculate</button>
+<div id="result"></div>
+
+<script>
+function calculate() {
+    const a = document.getElementById("num1").value;
+    const b = document.getElementById("num2").value;
+    const op = document.getElementById("operation").value;
+
+    fetch(`http://localhost:18080/calc?op=${op}&a=${a}&b=${b}`)
+        .then(res => res.text())
+        .then(result => document.getElementById("result").innerText = "Result: " + result)
+        .catch(err => document.getElementById("result").innerText = "Error: " + err);
+}
+</script>
+</body>
+</html>

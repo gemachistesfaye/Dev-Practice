@@ -92,10 +92,10 @@ if (operation == "E") {
             }
 
             // for the a single input
-            if (operation == "s"  operation == "e"  operation == "sh"  operation == "ch"  operation == "th"  
-                operation == "ish"  operation == "ich"  operation == "ith"  
-                operation == "sin"  operation == "cos"  operation == "tan"  
-                operation == "is"  operation == "ic"  operation == "it") {
+if (operation == "s" || operation == "e" || operation == "sh" || operation == "ch" || operation == "th"
+    || operation == "ish" || operation == "ich" || operation == "ith"
+    || operation == "sin" || operation == "cos" || operation == "tan"
+    || operation == "is" || operation == "ic" || operation == "it") {
                 
                 cout << "Enter a number: ";
                 if (!(cin >> num1)) {//this means if the input is not num show the below 
@@ -122,13 +122,13 @@ if (operation == "E") {
             // for the two inputs
             else if (operation == "l") {
                 cout << "Enter base and value for logarithm: ";
-                if (!(cin >> num1 >> num2)  num1 <= 0  num1 == 1  num2 <= 0) {
+                if (!(cin >> num1 >> num2) || num1 <= 0 || num1 == 1 || num2 <= 0) {
                     cout << "Error: Invalid input for logarithm!" << endl;
                     clearInput();
                     continue;
                 }
                 cout << "Result: " << logarithm(num1, num2) << endl;
-            } else if (operation == "+"  operation == "-"  operation == "*"  operation == "/"  operation == "^") {
+            } else if (operation == "+" || operation == "-" || operation == "*" || operation == "/" || operation == "^") {
                 cout << "Enter two numbers: ";
                 if (!(cin >> num1 >> num2)) {
                     cout << "Invalid input. Please enter two valid numbers." << endl;
