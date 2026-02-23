@@ -35,10 +35,4 @@ The repository is organized into folders by language/technology:
 - Covers both front-end and back-end technologies.
 - Perfect for students, beginners, and hobbyists.
 
----
 
-## 📌 How to Use
-
-1. Clone the repository:  
-   ```bash
-   git clone https://github.com/your-username/your-repo-name.git
