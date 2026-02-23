@@ -1,4 +1,4 @@
-Amanuel ራማ, [11/5/2024 9:49 AM]
+
 /*
    PROGRAMMED BY                   ID
    1.AMANUEL GEBREMEDHN          0668/16
@@ -85,7 +85,6 @@ int main() {
                   is for inverse sine, ic for inverse cosine, it for inverse tangent, or 'E' to exit */
             cin >> operation;
 
-Amanuel ራማ, [11/5/2024 9:49 AM]
 if (operation == "E") {
               cout<<"PROGRAMMED BY INFOSA STUDENTS"<<endl;//this statment will be seen in the terminal after pressing E
               
@@ -157,7 +156,7 @@ AND FOR FLOW CONTROL CONTINUE
 */
 // we are defining what function we use
 
-Amanuel ራማ, [11/5/2024 9:49 AM]
+
 double add(double a, double b) { return a + b; }
 double subtract(double a, double b) { return a - b; }
 double multiply(double a, double b) { return a * b; }
